@@ -12,7 +12,9 @@ public class Main {
         //dodatniaczynie();
         //trzyliczby();
         //piecliczb();
-        rok();
+        //rok();
+        //słicz();
+        trojkat();
     }
 
     public static void Stozek() {
@@ -205,4 +207,85 @@ public class Main {
             System.out.println("Rok nieprzestępny :" + a);
         }
     }
+    public static void słicz(){
+
+        System.out.println("Podaj numer");
+        Scanner liczba1 = new Scanner(System.in);
+        int a = liczba1.nextInt();
+
+        switch (a) {
+            case 1:
+                System.out.println("styczeń");
+                break;
+
+            case 2:
+                System.out.println("luty");
+                break;
+
+            case 3:
+                System.out.println("marzec");
+                break;
+            case 4:
+                System.out.println("kwiecień");
+                break;
+            case 5:
+                System.out.println("maj");
+                break;
+            case 6:
+                System.out.println("czerwiec");
+                break;
+            case 7:
+                System.out.println("lipiec");
+                break;
+            case 8:
+                System.out.println("sierpień");
+                break;
+            case 9:
+                System.out.println("wrzesień");
+                break;
+            case 10:
+                System.out.println("październik");
+                break;
+            case 11:
+                System.out.println("listopad");
+                break;
+            case 12:
+                System.out.println("grudzień");
+                break;
+            default:
+                System.out.println("Podano nr miesiąca inny niż z przedziału 1-12");
+        }
+    }
+    public static void trojkat(){
+
+        System.out.println("Podaj pierwszą liczbę");
+        Scanner liczba1 = new Scanner(System.in);
+        int a = liczba1.nextInt();
+        System.out.println("Podaj drugą liczbę");
+        Scanner liczba2 = new Scanner(System.in);
+        int b = liczba2.nextInt();
+        System.out.println("Podaj trzecią liczbę");
+        Scanner liczba3 = new Scanner(System.in);
+        int c = liczba3.nextInt();
+
+        if(a+b>c ){
+            System.out.println("Da się zrobić trójkąt");
+        }
+        else if (a+b<=c){
+            System.out.println("Nie da się zrobić trójkąta");
+        }
+        else if(c+b>a) {
+            System.out.println("Da się zrobić trójkąt");
+        }
+        else if(c+b<=a) {
+            System.out.println("Nie da się zrobić trójkąta");
+        }
+        else if(c+a>b) {
+            System.out.println("Da się zrobić trójkąt");
+        }
+        else{
+            System.out.println("Nie da się zrobić trójkąta");
+        }
+    }
+
 }
